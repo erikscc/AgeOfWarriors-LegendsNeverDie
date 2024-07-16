@@ -18,8 +18,8 @@ public class ME_CustomLight : MonoBehaviour
         Shader.SetGlobalVectorArray("ME_LightPositions", ListToArrayWithMaxCount(null, MaxLightsCount));
         Shader.SetGlobalVectorArray("ME_LightColors", ListToArrayWithMaxCount(null, MaxLightsCount));
 
-
-        sceneLights = GameObject.FindObjectsOfType<Light>().ToList();
+		//FindObjectsOfType
+		sceneLights = GameObject.FindObjectsByType<Light>(FindObjectsSortMode.None).ToList();
         PointLightAttenuation = GeneratePointAttenuationTexture();
         Shader.SetGlobalTexture("ME_PointLightAttenuation", PointLightAttenuation);
     }

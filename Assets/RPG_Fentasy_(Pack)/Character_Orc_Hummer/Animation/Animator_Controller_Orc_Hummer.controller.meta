@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ebf3bbbba3590aa45ab5154a022c673d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 47749
+  packageName: RPG Fantasy (Pack)
+  packageVersion: 1.7
+  assetPath: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Animator_Controller_Orc_Hummer.controller
+  uploadId: 453218

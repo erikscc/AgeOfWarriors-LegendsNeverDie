@@ -29,7 +29,7 @@ public class CamJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPoin
 		//get the camera controller and character placer
 		cameraController = Camera.main.gameObject.transform.parent;
 		direction = Vector3.zero;
-		characterPlacer = GameObject.FindObjectOfType<CharacterPlacement>();
+		characterPlacer = GameObject.FindFirstObjectByType<CharacterPlacement>();
 	}
 	
 	void Update(){

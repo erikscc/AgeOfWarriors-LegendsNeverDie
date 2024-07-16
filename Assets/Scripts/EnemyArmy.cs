@@ -15,7 +15,7 @@ public class EnemyArmy : MonoBehaviour {
 		int level = PlayerPrefs.GetInt("level");
 		
 		//also find the character placement script
-		characterPlacement = GameObject.FindObjectOfType<CharacterPlacement>();
+		characterPlacement = GameObject.FindFirstObjectByType<CharacterPlacement>();
 		
 		//spawn enemies if this level exists
 		if(level < levelData.levels.Count)

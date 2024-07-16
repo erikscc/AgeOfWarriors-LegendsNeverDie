@@ -69,7 +69,7 @@ public class Unit : MonoBehaviour {
 			dustEffect = transform.Find("dust").gameObject.GetComponent<ParticleSystem>();
 		
 		//find the area so the character can walk around
-		area = GameObject.FindObjectOfType<WalkArea>();
+		area = GameObject.FindFirstObjectByType<WalkArea>();
 	}
 	
 	void FixedUpdate(){

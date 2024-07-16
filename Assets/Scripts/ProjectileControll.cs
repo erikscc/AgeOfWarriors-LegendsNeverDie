@@ -8,7 +8,6 @@ public class ProjectileControll : MonoBehaviour
 	private Vector3 targetPosition;
 	private bool isMoving = false;
 	[SerializeField] private Transform destination;
-	private int counter = 0;
 	[SerializeField] private GameObject explosionPS;
 	void Update()
 	{
@@ -21,15 +20,6 @@ public class ProjectileControll : MonoBehaviour
 		{
 			SetTarget(ScreenToWorldPosition(GetRandomScreenPosition(), depth));
 
-			//if (counter < 4)
-			//{
-			//	counter++;
-			//	SetTarget(ScreenToWorldPosition(GetRandomScreenPosition(), 10f));
-			//}
-			//else
-			//{
-			//	SetTarget(destination.position);
-			//}
 		}
 	}
 

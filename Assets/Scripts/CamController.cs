@@ -24,7 +24,7 @@ public class CamController : MonoBehaviour {
 		rotationX = rot.x;
 		
 		//find the character placer
-		characterPlacer = GameObject.FindObjectOfType<CharacterPlacement>();
+		characterPlacer = GameObject.FindFirstObjectByType<CharacterPlacement>();
     }
 	
 	void Update(){

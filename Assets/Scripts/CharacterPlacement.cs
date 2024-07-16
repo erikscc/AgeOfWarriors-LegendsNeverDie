@@ -86,7 +86,7 @@ public class CharacterPlacement : MonoBehaviour {
 	void Awake(){
 		//get the level data object and check if we're using mobile controls
 		levelData = Resources.Load("Level data") as LevelData;
-		mobile = (GameObject.FindObjectOfType<CamJoystick>() != null);
+		mobile = (GameObject.FindFirstObjectByType<CamJoystick>() != null);
 		
 		if(mobile){
 			//if the game has mobile controls, enable the grid, update the button text and don't show the erase button since it doesn't work with the 2D grid
@@ -100,7 +100,7 @@ public class CharacterPlacement : MonoBehaviour {
 		gridSize = levelData.gridSize * 2;
 		
 		//get the grid center by taking the opposite of the the enemy army position
-		gridCenter = GameObject.FindObjectOfType<EnemyArmy>().gameObject.transform.position;
+		gridCenter = GameObject.FindFirstObjectByType<EnemyArmy>().gameObject.transform.position;
 		gridCenter = new Vector3(-gridCenter.x, gridCenter.y, gridCenter.z);
 		
 		//if we're using the grid, create a 3D border and a 2D grid
@@ -493,7 +493,7 @@ public class CharacterPlacement : MonoBehaviour {
 	//get all units in range of a certain position
 	public GameObject unitsInRange(Vector3 position){
 		//store the units in an array
-		Unit[] allUnits = GameObject.FindObjectsOfType<Unit>();
+		Unit[] allUnits = GameObject.FindObjectsByType<Unit>(FindObjectsSortMode.None);
 		
 		//foreach unit, check if it's in range and return as soon as one of them is
 		foreach(Unit unit in allUnits){
@@ -812,7 +812,7 @@ public class CharacterPlacement : MonoBehaviour {
 		}
 		
 		//start all enemies as well
-		FindObjectOfType<EnemyArmy>().startEnemies();
+		FindFirstObjectByType<EnemyArmy>().startEnemies();
 		
 		//show the new UI
 		StartCoroutine(battleUI());

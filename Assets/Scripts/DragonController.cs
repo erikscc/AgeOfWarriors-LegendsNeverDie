@@ -10,7 +10,6 @@ public class DragonController : MonoBehaviour
 	private Vector3 targetPosition;
 	private bool isMoving = false;
 	[SerializeField] private Transform destination;
-	private int counter = 0;
 	[SerializeField] private GameObject explosionPS;
 	[SerializeField] private GameObject spit;
 	[SerializeField] private Transform spitPoint;

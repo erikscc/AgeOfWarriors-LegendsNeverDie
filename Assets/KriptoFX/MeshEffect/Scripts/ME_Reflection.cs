@@ -15,7 +15,7 @@ public class ME_Reflection : MonoBehaviour
 	// Use this for initialization
 	void Awake ()
 	{
-	    var lights = GameObject.FindObjectsOfType<Light>();
+	    var lights = GameObject.FindObjectsByType<Light>(FindObjectsSortMode.None);
 	    dirLight = new List<Light>();
         lightIntencity = new List<float>();
 	    foreach (var l in lights)

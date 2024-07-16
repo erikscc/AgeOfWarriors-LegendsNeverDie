@@ -9,7 +9,7 @@ public class CharacterSelector : MonoBehaviour {
 	
 	void Start () {
 		//find the character placement script
-		characterPlacer = GameObject.FindObjectOfType<CharacterPlacement>();
+		characterPlacer = GameObject.FindFirstObjectByType<CharacterPlacement>();
 	}
 	
 	public void Select(){
