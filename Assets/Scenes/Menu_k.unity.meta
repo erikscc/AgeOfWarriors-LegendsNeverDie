@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e10d6b4774f968a4fac95c6be75e3b97
+timeCreated: 1512685406
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Scenes/Menu.unity
+  uploadId: 243884

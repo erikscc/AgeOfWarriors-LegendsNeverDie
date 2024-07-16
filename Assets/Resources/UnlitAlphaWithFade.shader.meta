@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f9ad75679d35e954e8327aee90a723d0
+timeCreated: 1510074463
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Resources/UnlitAlphaWithFade.shader
+  uploadId: 243884

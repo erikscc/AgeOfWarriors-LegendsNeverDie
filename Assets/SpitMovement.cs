@@ -7,14 +7,14 @@ public class SpitMovement : MonoBehaviour
 {
 	[SerializeField] private GameObject explosionPS;
 	[SerializeField] private Vector3 targetPosition;
-	private int speed = 50;
-	private int rotationSpeed = 5;
-	private bool isMoving;
+	//private int speed = 50;
+	//private int rotationSpeed = 5;
+	//private bool isMoving;
 
 	public SpitMovement(Vector3 target)
 	{
 		targetPosition = target;
-		isMoving = true;
+		//isMoving = true;
 	}
 	private void Start()
 	{
@@ -30,7 +30,7 @@ public class SpitMovement : MonoBehaviour
 	{
 		targetPosition = target;
 		Debug.Log("Target : " + target);
-		isMoving = true;
+		//isMoving = true;
 	}
 
 	void MoveTowardsTarget()

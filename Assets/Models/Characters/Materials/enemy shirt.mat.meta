@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 639c67f50b537fb4086504778a2b398f
+timeCreated: 1459242500
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/enemy shirt.mat
+  uploadId: 243884

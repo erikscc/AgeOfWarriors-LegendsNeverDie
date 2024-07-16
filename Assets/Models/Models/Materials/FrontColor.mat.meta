@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8d4d3208ec105554ebe15388bcd7178d
+timeCreated: 1472305628
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Models/Materials/FrontColor.mat
+  uploadId: 243884

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0d9bb8589f2313147ad57400ad4b77ff
+timeCreated: 1472989221
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Models/Materials/window.mat
+  uploadId: 243884

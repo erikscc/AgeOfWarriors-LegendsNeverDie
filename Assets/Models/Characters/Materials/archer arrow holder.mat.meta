@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e1a1171cd45edf54c8ff7dc225ebf762
+timeCreated: 1473860325
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/archer arrow
+    holder.mat
+  uploadId: 243884

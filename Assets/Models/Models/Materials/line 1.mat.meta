@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 25fd6f789461fdc4b8ddd175373b755b
+timeCreated: 1511557559
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Models/Materials/line 1.mat
+  uploadId: 243884

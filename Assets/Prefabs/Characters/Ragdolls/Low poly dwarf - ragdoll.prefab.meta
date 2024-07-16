@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: fd7666df40a8dd641b1c0152b5f0415e
+timeCreated: 1515939134
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Prefabs/Characters/Ragdolls/Low poly
+    dwarf - ragdoll.prefab
+  uploadId: 243884

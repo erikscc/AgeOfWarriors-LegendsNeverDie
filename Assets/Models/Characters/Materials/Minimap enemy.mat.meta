@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2dccc7b424ca1354fb4932ff237c3dbc
+timeCreated: 1473954767
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/Minimap enemy.mat
+  uploadId: 243884

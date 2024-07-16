@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d02e308e500916044ad72acb18b80c09
+timeCreated: 1473860325
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/archer bow
+    1.mat
+  uploadId: 243884

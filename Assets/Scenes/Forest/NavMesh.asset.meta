@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c381ace61f8de194c837429caf4f16ff
+timeCreated: 1513033019
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 23800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Scenes/Forest/NavMesh.asset
+  uploadId: 243884

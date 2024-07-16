@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 71fe3073b42b4de43af3b3ca43eb4db2
+timeCreated: 1459543800
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Models/Materials/Castle 1.mat
+  uploadId: 243884

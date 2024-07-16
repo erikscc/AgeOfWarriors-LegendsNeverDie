@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 216d593297c0a8c4793d5570ee06d2e0
+timeCreated: 1473861080
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Prefabs/Characters/Low poly archer.prefab
+  uploadId: 243884

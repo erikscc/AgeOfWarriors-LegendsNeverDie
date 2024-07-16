@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6f2e9fce48ba37b48ac8541fd2876dfa
+timeCreated: 1472305628
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Models/Materials/BackColor.mat
+  uploadId: 243884

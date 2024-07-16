@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bd5f9ed38a39f9347b274a5f5a2e50cd
+timeCreated: 1472571443
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Animators/button.controller
+  uploadId: 243884

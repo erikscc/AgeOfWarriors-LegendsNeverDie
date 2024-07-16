@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e5f975a77b55d8049bad4988d2281635
+timeCreated: 1473870577
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Scripts/Arrow.cs
+  uploadId: 243884

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 09b4d36c3d1664b47b03852b023cb588
+timeCreated: 1459242500
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/enemy helmet.mat
+  uploadId: 243884

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7cac1152ec568064fbaf197c850ed349
+timeCreated: 1459187706
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/sword grip.mat
+  uploadId: 243884

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: af9cb9b5731fc0849977ba4f73442d0c
+timeCreated: 1472981159
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Models/Materials/Target.mat
+  uploadId: 243884

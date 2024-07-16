@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c938965860f2f124998f3e833d983752
+timeCreated: 1508856134
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Scenes/Forest.unity
+  uploadId: 243884

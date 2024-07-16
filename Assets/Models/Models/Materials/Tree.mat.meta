@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b6077b691dd3a9945bce0a40d5fcfb5f
+timeCreated: 1473011119
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Models/Materials/Tree.mat
+  uploadId: 243884

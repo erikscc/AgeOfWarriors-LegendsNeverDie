@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8e43964b0eec60b4ba77a38af02180e4
+timeCreated: 1511648610
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/dwarf helmet.mat
+  uploadId: 243884

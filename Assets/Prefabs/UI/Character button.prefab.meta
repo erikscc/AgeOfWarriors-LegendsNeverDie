@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: de11406671658fa4aa92b9cc020fdf25
+timeCreated: 1508967489
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Prefabs/UI/Character button.prefab
+  uploadId: 243884

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 041bff37207867749a6d68c1beee597d
+timeCreated: 1482765936
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Animators/Character animators/Dwarf character.controller
+  uploadId: 243884

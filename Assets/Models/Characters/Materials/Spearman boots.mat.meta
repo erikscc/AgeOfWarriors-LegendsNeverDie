@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: cddc4a4d331a9e7448a718cd91e68692
+timeCreated: 1512340841
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/Spearman
+    boots.mat
+  uploadId: 243884

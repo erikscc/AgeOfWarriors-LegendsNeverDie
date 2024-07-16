@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a58ed12bbea9b0f40ac9be70cd62dc4e
+timeCreated: 1482765936
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Animators/Character animators/Archer
+    character.controller
+  uploadId: 243884

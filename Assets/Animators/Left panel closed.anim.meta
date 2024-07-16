@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a3c689459a44a474f9a8a79c192c82f8
+timeCreated: 1508965161
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Animators/Left panel closed.anim
+  uploadId: 243884

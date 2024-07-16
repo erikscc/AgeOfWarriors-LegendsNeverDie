@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4ad34b8e58e5df845abc25c9674bd37f
+timeCreated: 1508873480
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Prefabs/UI/Canvas.prefab
+  uploadId: 243884

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 78c2c8619e85fb34bb6e4b77c7a3794d
+timeCreated: 1459274330
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/Blue.mat
+  uploadId: 243884

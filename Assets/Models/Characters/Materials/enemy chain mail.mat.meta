@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 698af2195b2b8d44b880f4cc72bd66e7
+timeCreated: 1459242500
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/enemy chain
+    mail.mat
+  uploadId: 243884

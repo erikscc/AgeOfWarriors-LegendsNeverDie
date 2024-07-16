@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 285a00d2fb3ff7e41b54e194afd642c0
+timeCreated: 1511707979
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Scripts/WalkArea.cs
+  uploadId: 243884

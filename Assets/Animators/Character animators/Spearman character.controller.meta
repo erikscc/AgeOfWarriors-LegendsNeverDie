@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f4b821e7df4d6174bafb1f46d31b332f
+timeCreated: 1482765936
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Animators/Character animators/Spearman
+    character.controller
+  uploadId: 243884

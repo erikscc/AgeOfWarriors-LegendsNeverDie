@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c5385f35f25cb884ab30431530b76103
+timeCreated: 1522273956
+licenseType: Store
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Scenes/End screen.unity
+  uploadId: 243884

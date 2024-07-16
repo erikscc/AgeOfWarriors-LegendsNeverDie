@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f8d3fc3515d313a40a2e7955e7bcaa2c
+timeCreated: 1512305243
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Animators/End panel victory.anim
+  uploadId: 243884

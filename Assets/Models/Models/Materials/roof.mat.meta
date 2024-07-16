@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 67ace58194d17ab4f9ed6a8b19f8a991
+timeCreated: 1472989222
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Models/Materials/roof.mat
+  uploadId: 243884

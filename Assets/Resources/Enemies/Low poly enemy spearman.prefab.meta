@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d2e0e077d5ddbcc47a60bc920258771d
+timeCreated: 1517663487
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Resources/Enemies/Low poly enemy spearman.prefab
+  uploadId: 243884

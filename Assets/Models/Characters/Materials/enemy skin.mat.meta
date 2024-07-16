@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2be4c337fddcd5646a874e1fa8df0166
+timeCreated: 1459242500
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/enemy skin.mat
+  uploadId: 243884

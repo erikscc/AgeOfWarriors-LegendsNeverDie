@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3b5363c321e31f746ac282e4e137b3c7
+timeCreated: 1473860325
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/archer arrow.mat
+  uploadId: 243884

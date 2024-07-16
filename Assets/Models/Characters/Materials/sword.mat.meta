@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e57201baf09c6c04e84f361ae587c9f3
+timeCreated: 1459187706
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Models/Characters/Materials/sword.mat
+  uploadId: 243884

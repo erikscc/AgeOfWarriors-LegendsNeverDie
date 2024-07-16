@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 733a98befa041a844a705452f6b8d12b
+timeCreated: 1512691103
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118027
+  packageName: Battle Simulator
+  packageVersion: 1.0
+  assetPath: Assets/Battle Simulator/Assets/Animators/Start panel close.anim
+  uploadId: 243884
