@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 546fcea19b4ea254680e5e630dc34ace
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 210354
+  packageName: BIG Environment Pack Reforged
+  packageVersion: 1.0
+  assetPath: Assets/BIG_Environment_Pack_Reforged/Environment/Buildings/Building
+    Elements/Wall_01/Materials/Wall_01.mat
+  uploadId: 622954
