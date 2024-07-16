@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a1da353243062479a9b31c85074a796b
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 210354
+  packageName: BIG Environment Pack Reforged
+  packageVersion: 1.0
+  assetPath: Assets/BIG_Environment_Pack_Reforged/BEP_Standard Assets/Water (Pro
+    Only)/Water4/Sources/Scripts/WaterBase.cs
+  uploadId: 622954

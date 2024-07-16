@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9c2c627f6fe3945b39581fc103d32251
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 210354
+  packageName: BIG Environment Pack Reforged
+  packageVersion: 1.0
+  assetPath: Assets/BIG_Environment_Pack_Reforged/BEP_Standard Assets/Editor/Water
+    (Pro Only)/Water4/WaterBaseEditor.cs
+  uploadId: 622954
