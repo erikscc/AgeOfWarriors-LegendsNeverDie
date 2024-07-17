@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 1426466114}
   - component: {fileID: 1426466113}
   - component: {fileID: 1426466116}
+  - component: {fileID: 1426466117}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -313,13 +314,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426466112}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08084376, y: 0.7024701, z: -0.08084376, w: 0.7024701}
-  m_LocalPosition: {x: -8.36, y: 4.56, z: 5.1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.41, z: -10.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 13.13, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1426466116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,6 +365,21 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &1426466117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426466112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2969398eff76d44cb0f9d8209751fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 8256869621638003001}
+  offset: {x: -7.31, y: 4.24, z: 0.74}
+  followSpeed: 0.125
 --- !u!1 &1737133326
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +638,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dwarf
       objectReference: {fileID: 0}
+    - target: {fileID: 5561780510143780418, guid: 0b7a4ad364dd2ab41a8cce477e517525,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -785,6 +806,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barbarian
       objectReference: {fileID: 0}
+    - target: {fileID: 5423945542384364180, guid: d173163216dcfb644984efec58738b32,
+        type: 3}
+      propertyPath: m_TagString
+      value: Knight
+      objectReference: {fileID: 0}
     - target: {fileID: 7914865491652904544, guid: d173163216dcfb644984efec58738b32,
         type: 3}
       propertyPath: attackRange
@@ -817,6 +843,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 419e07b85c60e2a4e9cc88042690ad3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &8256869621638003001 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 499290768621941887, guid: d173163216dcfb644984efec58738b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 8256869621638002996}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
