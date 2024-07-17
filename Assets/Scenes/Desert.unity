@@ -771,22 +771,7 @@ MonoBehaviour:
   speedSetting: {fileID: 1696637714}
   gridPanel: {fileID: 656843573}
   gridArrow: {fileID: 487410342}
-  troops:
-  - deployableTroops: {fileID: 1092008134385896, guid: 7c6f3d0069dbd7f4eaadd4e5a74ccf8e,
-      type: 3}
-    troopCosts: 40
-    buttonImage: {fileID: 21300000, guid: cd1e0599e93b20a42bf3577ff5bc14ad, type: 3}
-    button: {fileID: 0}
-  - deployableTroops: {fileID: 1669688767034894, guid: d6e3e4b448df9e344b6348453b15c9bd,
-      type: 3}
-    troopCosts: 50
-    buttonImage: {fileID: 21300000, guid: 24d39e99711e53d48b49141689a3a171, type: 3}
-    button: {fileID: 0}
-  - deployableTroops: {fileID: 1000013090372502, guid: 216d593297c0a8c4793d5570ee06d2e0,
-      type: 3}
-    troopCosts: 60
-    buttonImage: {fileID: 21300000, guid: 1d60c38db66138f41a20dca006ee775a, type: 3}
-    button: {fileID: 0}
+  troopList: {fileID: 11400000, guid: e84591f20873e474983b69070d27fc8b, type: 2}
 --- !u!1 &1149201930 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1375582240015376, guid: 4ad34b8e58e5df845abc25c9674bd37f,
@@ -1404,6 +1389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1785071664}
   - component: {fileID: 1785071663}
+  - component: {fileID: 1785071665}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -1487,6 +1473,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 40, y: -30, z: 0}
+--- !u!114 &1785071665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785071662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!95 &1827475524 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95389631162975790, guid: 4ad34b8e58e5df845abc25c9674bd37f,

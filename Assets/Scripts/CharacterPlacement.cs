@@ -64,7 +64,8 @@ public class CharacterPlacement : MonoBehaviour
 	public Transform gridArrow;
 
 	[Header("Troops:")]
-	public List<Troop> troops;
+	//public List<Troop> troops;
+	public TroopList troopList;
 
 	//not visible in the inspector
 	private int selected;
@@ -346,7 +347,7 @@ public class CharacterPlacement : MonoBehaviour
 
 				//get a color for the demo character and change it based on the validity of the current mouse position
 				Color color = Color.white;
-				if (UnitsInRange(position) != null || position.x < 0 || troops[selected].troopCosts > coins || Vector3.Distance(Camera.main.transform.position, position) > levelData.placeRange || !WithinGrid(position))
+				if (UnitsInRange(position) != null || position.x < 0 || troopList.troopUnits[selected].troopCosts > coins || Vector3.Distance(Camera.main.transform.position, position) > levelData.placeRange || !WithinGrid(position))
 				{
 					color = levelData.invalidPosition;
 				}
@@ -432,7 +433,7 @@ public class CharacterPlacement : MonoBehaviour
 		if (CanPlace(position, placingGridCell))
 		{
 			//create a new unit/character and prevent it from moving
-			GameObject unit = Instantiate(troops[selected].deployableTroops, position, Quaternion.identity);
+			GameObject unit = Instantiate(troopList.troopUnits[selected].deployableTroops, position, Quaternion.identity);
 			DisableUnit(unit);
 
 			//set the correct rotation
@@ -442,7 +443,7 @@ public class CharacterPlacement : MonoBehaviour
 			placedUnits.Add(unit);
 
 			//decrease the number of coins left
-			coins -= troops[selected].troopCosts;
+			coins -= troopList.troopUnits[selected].troopCosts;
 			coinsText.text = coins + "";
 
 			//if we're using the grid system, update the grid by enabling the cell that corresponds with this position
@@ -450,7 +451,7 @@ public class CharacterPlacement : MonoBehaviour
 			{
 				GameObject cell = gridPanel.transform.GetChild(PositionToGridIndex(position)).GetChild(0).gameObject;
 				cell.SetActive(true);
-				cell.GetComponent<Image>().sprite = troops[selected].buttonImage;
+				cell.GetComponent<Image>().sprite = troopList.troopUnits[selected].buttonImage;
 			}
 		}
 	}
@@ -459,7 +460,7 @@ public class CharacterPlacement : MonoBehaviour
 	bool CanPlace(Vector3 position, bool placingGridCell)
 	{
 		//check if there's units too close to the current position
-		if (UnitsInRange(position) != null || troops[selected].troopCosts > coins || !WithinGrid(position))
+		if (UnitsInRange(position) != null || troopList.troopUnits[selected].troopCosts > coins || !WithinGrid(position))
 			return false;
 
 		//check if we're within the maximum place range
@@ -525,7 +526,7 @@ public class CharacterPlacement : MonoBehaviour
 			Destroy(unit);
 
 			//give the player back his coins
-			coins += troops[UnitIndex(unit)].troopCosts;
+			coins += troopList.troopUnits[UnitIndex(unit)].troopCosts;
 			coinsText.text = coins + "";
 
 			//if we're using the grid, clear this cell
@@ -540,9 +541,9 @@ public class CharacterPlacement : MonoBehaviour
 	//get the index in the troops list for this unit
 	int UnitIndex(GameObject unit)
 	{
-		for (int i = 0; i < troops.Count; i++)
+		for (int i = 0; i < troopList.troopUnits.Count; i++)
 		{
-			if (troops[i].deployableTroops.name == unit.name.Substring(0, unit.name.Length - 7))
+			if (troopList.troopUnits[i].deployableTroops.name == unit.name.Substring(0, unit.name.Length - 7))
 				return i;
 		}
 
@@ -585,7 +586,7 @@ public class CharacterPlacement : MonoBehaviour
 	IEnumerator AddCharacterButtons()
 	{
 		//for all troops...
-		for (int i = 0; i < troops.Count; i++)
+		for (int i = 0; i < troopList.troopUnits.Count; i++)
 		{
 			//add a button to the list of buttons
 			GameObject newButton = Instantiate(button);
@@ -596,7 +597,7 @@ public class CharacterPlacement : MonoBehaviour
 			newButton.GetComponent<Outline>().effectColor = levelData.buttonHighlight;
 
 			//set the correct button sprite
-			newButton.gameObject.GetComponent<Image>().sprite = troops[i].buttonImage;
+			newButton.gameObject.GetComponent<Image>().sprite = troopList.troopUnits[i].buttonImage;
 
 			//only enable outline for the first button
 			if (i == 0)
@@ -611,13 +612,13 @@ public class CharacterPlacement : MonoBehaviour
 			//set button name to its position in the list
 			newButton.transform.name = "" + i;
 
-			newButton.GetComponentInChildren<Text>().text = "" + troops[i].troopCosts;
+			newButton.GetComponentInChildren<Text>().text = "" + troopList.troopUnits[i].troopCosts;
 
 			//this is the new button
-			troops[i].button = newButton;
+			troopList.troopUnits[i].button = newButton;
 
 			//wait to create the button spawn effect
-			yield return new WaitForSeconds(levelData.buttonEffectTime / (float)troops.Count);
+			yield return new WaitForSeconds(levelData.buttonEffectTime / (float)troopList.troopUnits.Count);
 		}
 
 		//update the demo character
@@ -628,11 +629,11 @@ public class CharacterPlacement : MonoBehaviour
 	public void SelectTroop(int index)
 	{
 		//remove all outlines and set the current button outline visible
-		for (int i = 0; i < troops.Count; i++)
+		for (int i = 0; i < troopList.troopUnits.Count; i++)
 		{
-			troops[i].button.GetComponent<Outline>().enabled = false;
+			troopList.troopUnits[i].button.GetComponent<Outline>().enabled = false;
 		}
-		troops[index].button.GetComponent<Outline>().enabled = true;
+		troopList.troopUnits[index].button.GetComponent<Outline>().enabled = true;
 
 		//update the selected unit
 		selected = index;
@@ -657,7 +658,7 @@ public class CharacterPlacement : MonoBehaviour
 			Destroy(currentDemoCharacter);
 
 		//create a new demo and name and tag it
-		currentDemoCharacter = Instantiate(troops[selected].deployableTroops);
+		currentDemoCharacter = Instantiate(troopList.troopUnits[selected].deployableTroops);
 		currentDemoCharacter.name = "demo";
 		currentDemoCharacter.tag = "Untagged";
 
@@ -686,7 +687,7 @@ public class CharacterPlacement : MonoBehaviour
 	//change all the unit stats in the character panel
 	public void SetStats(int index)
 	{
-		GameObject troop = troops[index].deployableTroops;
+		GameObject troop = troopList.troopUnits[index].deployableTroops;
 		Unit unit = troop.GetComponent<Unit>();
 		statsName.text = troop.name;
 		statsDamage.text = unit.damage + "";
