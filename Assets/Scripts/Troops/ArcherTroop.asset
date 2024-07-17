@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3116a43266cfcae498282decd33287d0, type: 3}
+  m_Name: ArcherTroop
+  m_EditorClassIdentifier: 
+  deployableTroops: {fileID: 1000013090372502, guid: 216d593297c0a8c4793d5570ee06d2e0,
+    type: 3}
+  troopCosts: 60
+  buttonImage: {fileID: 21300000, guid: 1d60c38db66138f41a20dca006ee775a, type: 3}
+  button: {fileID: 0}
