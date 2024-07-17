@@ -8,7 +8,9 @@ public abstract class MyUnit : MonoBehaviour
 	public int health;
 	public float attackRange;
 	public int attackDamage;
-	public float attackCooldown = 1.0f; // Set this value in the inspector
+	public float attackCooldown = 1.0f;
+	public float runningSpeed;
+	private float walkingSpeed => runningSpeed / 3f;
 
 	protected NavMeshAgent navMeshAgent;
 	protected MyUnit currentTarget;
@@ -48,18 +50,30 @@ public abstract class MyUnit : MonoBehaviour
 		{
 			float distanceToTarget = Vector3.Distance(transform.position, currentTarget.transform.position);
 
-			if (distanceToTarget <= attackRange)
+			if (distanceToTarget > attackRange * 2f)
 			{
-				if (canAttack)
-				{
-					Attack(currentTarget);
-				}
+				stateController.ChangeAnimationState(State.Run);
+				navMeshAgent.speed = runningSpeed;
 			}
-			else
+			else if (distanceToTarget > attackRange + 3f)
 			{
-				navMeshAgent.SetDestination(currentTarget.transform.position);
 				stateController.ChangeAnimationState(State.Walk);
+				navMeshAgent.speed = walkingSpeed;
 			}
+
+
+				if (distanceToTarget <= attackRange)
+				{
+					if (canAttack)
+					{
+						Attack(currentTarget);
+					}
+				}
+				else
+				{
+					navMeshAgent.SetDestination(currentTarget.transform.position);
+					//stateController.ChangeAnimationState(State.Walk);
+				}
 
 			yield return new WaitForSeconds(0.1f); // Adjust this value as needed for performance
 		}

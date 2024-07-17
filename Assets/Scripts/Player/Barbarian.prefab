@@ -2373,14 +2373,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 7041762089321917798}
-  <idleClipLength>k__BackingField: 0
-  <idleClipSpeed>k__BackingField: 0
-  <walkClipLength>k__BackingField: 0
-  <walkClipSpeed>k__BackingField: 0
-  <runClipLength>k__BackingField: 0
-  <runClipSpeed>k__BackingField: 0
-  <attackClipLength>k__BackingField: 0
-  <attackClipSpeed>k__BackingField: 0
 --- !u!114 &7914865491652904544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2398,6 +2390,7 @@ MonoBehaviour:
   attackRange: 2
   attackDamage: 20
   attackCooldown: 1
+  runningSpeed: 1
 --- !u!195 &-6481371664471773927
 NavMeshAgent:
   m_ObjectHideFlags: 0

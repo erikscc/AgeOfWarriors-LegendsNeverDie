@@ -559,6 +559,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2052857734540409383, guid: 0b7a4ad364dd2ab41a8cce477e517525,
         type: 3}
+      propertyPath: runningSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2052857734540409383, guid: 0b7a4ad364dd2ab41a8cce477e517525,
+        type: 3}
       propertyPath: attackCooldown
       value: 5
       objectReference: {fileID: 0}
@@ -575,7 +580,7 @@ PrefabInstance:
     - target: {fileID: 4906720465443741963, guid: 0b7a4ad364dd2ab41a8cce477e517525,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.64
+      value: 12.66
       objectReference: {fileID: 0}
     - target: {fileID: 4906720465443741963, guid: 0b7a4ad364dd2ab41a8cce477e517525,
         type: 3}
@@ -702,6 +707,11 @@ PrefabInstance:
       propertyPath: rangedUnit
       value: 
       objectReference: {fileID: 6562537537822470799}
+    - target: {fileID: 6961996150679064137, guid: 0a14727629f717044a0f87b128e13663,
+        type: 3}
+      propertyPath: runningSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8767808670121575529, guid: 0a14727629f717044a0f87b128e13663,
         type: 3}
       propertyPath: m_Name
@@ -733,7 +743,7 @@ PrefabInstance:
     - target: {fileID: 499290768621941887, guid: d173163216dcfb644984efec58738b32,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4.28
       objectReference: {fileID: 0}
     - target: {fileID: 499290768621941887, guid: d173163216dcfb644984efec58738b32,
         type: 3}
@@ -778,12 +788,17 @@ PrefabInstance:
     - target: {fileID: 7914865491652904544, guid: d173163216dcfb644984efec58738b32,
         type: 3}
       propertyPath: attackRange
-      value: 1
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914865491652904544, guid: d173163216dcfb644984efec58738b32,
+        type: 3}
+      propertyPath: runningSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7914865491652904544, guid: d173163216dcfb644984efec58738b32,
         type: 3}
       propertyPath: attackCooldown
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

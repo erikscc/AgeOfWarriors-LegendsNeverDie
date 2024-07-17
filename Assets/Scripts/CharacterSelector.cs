@@ -15,6 +15,6 @@ public class CharacterSelector : MonoBehaviour {
 	public void Select(){
 		//select the correct troop/unit via the character placement script
 		if(characterPlacer != null)
-			characterPlacer.selectTroop(int.Parse(transform.name)); 
+			characterPlacer.SelectTroop(int.Parse(transform.name)); 
 	}
 }

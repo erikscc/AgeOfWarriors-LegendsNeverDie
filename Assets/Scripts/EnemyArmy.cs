@@ -61,14 +61,14 @@ public class EnemyArmy : MonoBehaviour {
 			spawnedEnemies.Add(newUnit);
 			
 			//disable the unit until the battle starts
-			characterPlacement.disableUnit(newUnit);
+			characterPlacement.DisableUnit(newUnit);
 		}
 	}
 	
 	public void startEnemies(){
 		//enable all enemies so they start the battle
 		foreach(GameObject enemyUnit in spawnedEnemies){
-			characterPlacement.enableUnit(enemyUnit);
+			characterPlacement.EnableUnit(enemyUnit);
 		}
 	}
 }

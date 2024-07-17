@@ -10268,6 +10268,7 @@ MonoBehaviour:
   attackRange: 50
   attackDamage: 25
   attackCooldown: 1
+  runningSpeed: 1
   meleeUnit: {fileID: 0}
   rangedUnit: {fileID: 0}
 --- !u!114 &-629498732144487622
@@ -10283,14 +10284,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8460135032735130037}
-  <idleClipLength>k__BackingField: 0
-  <idleClipSpeed>k__BackingField: 0
-  <walkClipLength>k__BackingField: 0
-  <walkClipSpeed>k__BackingField: 0
-  <runClipLength>k__BackingField: 0
-  <runClipSpeed>k__BackingField: 0
-  <attackClipLength>k__BackingField: 0
-  <attackClipSpeed>k__BackingField: 0
 --- !u!195 &3531873365047421503
 NavMeshAgent:
   m_ObjectHideFlags: 0
