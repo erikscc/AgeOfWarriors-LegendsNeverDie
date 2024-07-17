@@ -1,14 +1,11 @@
 using UnityEngine;
-
 public enum State
 {
 	Idle = 0,
 	Walk = 1,
 	Run = 2,
 	Attack = 3
-
 }
-
 public class StateController : MonoBehaviour
 {
 	[SerializeField] private Animator animator;
@@ -28,5 +25,4 @@ public class StateController : MonoBehaviour
 
 		return states[randomIndex];
 	}
-
 }

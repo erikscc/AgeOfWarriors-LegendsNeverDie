@@ -7652,8 +7652,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1837308783}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: openCampaign
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: OpenCampaign
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20662,7 +20662,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1837308783}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: openCampaign
+        m_MethodName: OpenCampaign
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

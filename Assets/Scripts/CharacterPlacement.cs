@@ -914,7 +914,7 @@ public class CharacterPlacement : MonoBehaviour
 		}
 
 		//start all enemies as well
-		FindFirstObjectByType<EnemyArmy>().startEnemies();
+		FindFirstObjectByType<EnemyArmy>().StartEnemies();
 
 		//show the new UI
 		StartCoroutine(BattleUI());

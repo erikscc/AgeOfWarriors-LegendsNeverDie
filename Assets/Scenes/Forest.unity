@@ -1435,6 +1435,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 978500723}
+    - target: {fileID: 223460894436318036, guid: 4ad34b8e58e5df845abc25c9674bd37f,
+        type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223460894436318036, guid: 4ad34b8e58e5df845abc25c9674bd37f,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 224054717225963178, guid: 4ad34b8e58e5df845abc25c9674bd37f,
         type: 3}
       propertyPath: m_AnchorMax.x

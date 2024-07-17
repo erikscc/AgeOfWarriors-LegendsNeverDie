@@ -35,12 +35,9 @@ public class SpitMovement : MonoBehaviour
 
 	void MoveTowardsTarget()
 	{
-		
-			transform.position = Vector3.MoveTowards(transform.position, targetPosition, 1f);
-		
+		transform.position = Vector3.MoveTowards(transform.position, targetPosition, 1f);
 	}
 
-	
 	private void OnTriggerEnter(Collider other)
 	{
 		Debug.Log("Trigger reached " + other.name);

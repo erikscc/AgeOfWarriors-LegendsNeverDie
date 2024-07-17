@@ -41,10 +41,10 @@ public class Menu : MonoBehaviour
 		//howToPlay.SetActive(false);
 
 		//add the level buttons based on the level data
-		addLevels();
+		AddLevels();
 	}
 
-	void addLevels()
+	void AddLevels()
 	{
 		//for each level in the level data
 		for (int i = 0; i < levelData.levels.Count; i++)
@@ -54,7 +54,7 @@ public class Menu : MonoBehaviour
 
 			//add a new panel if this level uses a new scene
 			if (currentLevelPanel == null || currentLevelPanel.childCount == maxLevelsPerPage || lastScene != sceneName)
-				addLevelPanel();
+				AddLevelPanel();
 
 			lastScene = sceneName;
 
@@ -86,23 +86,23 @@ public class Menu : MonoBehaviour
 			newButton.transform.name = "" + i;
 
 			//add a onclick function to the button with the name to select the proper piece
-			newButton.GetComponent<Button>().onClick.AddListener(() => { openLevel(int.Parse(newButton.transform.name)); });
+			newButton.GetComponent<Button>().onClick.AddListener(() => { OpenLevel(int.Parse(newButton.transform.name)); });
 
 			//only show the current panel
 			if ((PlayerPrefs.GetInt("level") >= levelData.levels.Count && i == 0) || PlayerPrefs.GetInt("level") == i)
 			{
 				currentLevelPanel.gameObject.SetActive(true);
 				page = levelPanels.IndexOf(currentLevelPanel);
-				title.text = getSceneName(currentLevelPanel);
+				title.text = GetSceneName(currentLevelPanel);
 			}
 		}
 
 		//update the level panel buttons and don't yet show the buttons
 		levelPanelParent.parent.gameObject.SetActive(false);
-		checkLeftRightButtons();
+		CheckLeftRightButtons();
 	}
 
-	void addLevelPanel()
+	void AddLevelPanel()
 	{
 		//add a new level panel for the level buttons and parent it to the main panel
 		GameObject newLevelPanel = Instantiate(levelPanel);
@@ -116,7 +116,7 @@ public class Menu : MonoBehaviour
 		currentLevelPanel = newLevelPanel.transform;
 	}
 
-	void checkLeftRightButtons()
+	void CheckLeftRightButtons()
 	{
 		//either enable or disable the buttons by checking the current level page
 		if (page == 0)
@@ -138,7 +138,7 @@ public class Menu : MonoBehaviour
 		}
 	}
 
-	public void changePage(int direction)
+	public void ChangePage(int direction)
 	{
 		//change the level page when pressing the arrow button
 		levelPanels[page].gameObject.SetActive(false);
@@ -149,17 +149,17 @@ public class Menu : MonoBehaviour
 		levelPanelParent.parent.GetComponent<Animator>().SetTrigger("effect");
 
 		//update the level panel buttons
-		checkLeftRightButtons();
-		title.text = getSceneName(levelPanels[page]);
+		CheckLeftRightButtons();
+		title.text = GetSceneName(levelPanels[page]);
 	}
 
-	public void openLevel(int index)
+	public void OpenLevel(int index)
 	{
 		//open the level at this specific index
-		StartCoroutine(level(index));
+		StartCoroutine(Level(index));
 	}
 
-	IEnumerator level(int index)
+	IEnumerator Level(int index)
 	{
 		//wait for the fade animation to end
 		transition.SetTrigger("fade");
@@ -171,90 +171,90 @@ public class Menu : MonoBehaviour
 		SceneManager.LoadScene(levelData.levels[index].scene);
 	}
 
-	public void options()
+	public void Options()
 	{
 		//show the options panel
 		startPanel.SetBool("enabled", false);
-		StartCoroutine(openOptions());
+		StartCoroutine(OpenOptions());
 	}
 
 	//hide options
-	public void closeOptions()
+	public void CloseOptions()
 	{
 		startPanel.SetBool("enabled", true);
 	}
 
 	//open the how to play panel 
-	public void howToPlayOpen()
+	public void HowToPlayOpen()
 	{
 		startPanel.SetBool("enabled", false);
-		StartCoroutine(openHowToPlay());
+		StartCoroutine(OpenHowToPlay());
 	}
 
 	//close the how to play panel
-	public void closeHowToPlay()
+	public void CloseHowToPlay()
 	{
 		startPanel.SetBool("enabled", true);
 		howToPlay.SetActive(false);
 	}
 
 	//open the credits panel
-	public void creditsOpen()
+	public void CreditsOpen()
 	{
 		startPanel.SetBool("enabled", false);
-		StartCoroutine(openCredits());
+		StartCoroutine(OpenCredits());
 	}
 
 	//close the credits panel
-	public void closeCredits()
+	public void CloseCredits()
 	{
 		startPanel.SetBool("enabled", true);
 		credits.SetActive(false);
 	}
 
 	//open the campaign panel with the levels
-	public void openCampaign()
+	public void OpenCampaign()
 	{
 		startPanel.SetBool("enabled", false);
 		levelPanelParent.parent.gameObject.SetActive(true);
 	}
 
 	//go back to the main menu
-	public void back()
+	public void Back()
 	{
 		levelPanelParent.parent.gameObject.SetActive(false);
 		startPanel.SetBool("enabled", true);
 	}
 
 	//quit the app
-	public void quit()
+	public void Quit()
 	{
 		Application.Quit();
 	}
 
 	//get the scene for a specific level page
-	string getSceneName(Transform levelPage)
+	string GetSceneName(Transform levelPage)
 	{
 		int firstLevel = int.Parse(levelPage.GetChild(0).GetComponentInChildren<Text>().text) - 1;
 		return levelData.levels[firstLevel].scene;
 	}
 
 	//open the options panel
-	IEnumerator openOptions()
+	IEnumerator OpenOptions()
 	{
 		yield return new WaitForSeconds(0.7f);
-		GetComponent<Settings>().openSettingsMenu();
+		GetComponent<Settings>().OpenSettingsMenu();
 	}
 
 	//open the credits panel
-	IEnumerator openCredits()
+	IEnumerator OpenCredits()
 	{
 		yield return new WaitForSeconds(0.7f);
 		credits.SetActive(true);
 	}
 
 	//open the how to play panel
-	IEnumerator openHowToPlay()
+	IEnumerator OpenHowToPlay()
 	{
 		yield return new WaitForSeconds(0.7f);
 		howToPlay.SetActive(true);
