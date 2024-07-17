@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: 556ce3998618b0d489b645fe642cade1
+AssetOrigin:
+  serializedVersion: 1
+  productId: 236627
+  packageName: Knights(Pack)
+  packageVersion: 1.0
+  assetPath: Assets/Knights_(Pack)/Knight_05/Mesh/Knight_05_Mesh.FBX
+  uploadId: 536097
 ModelImporter:
-  serializedVersion: 19301
+  serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects: {}
   materials:
@@ -14,9 +21,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -39,27 +45,35 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -74,13 +88,13 @@ ModelImporter:
     serializedVersion: 3
     human: []
     skeleton:
-    - name: Knight_04_Mesh(Clone)
+    - name: Knight_05_Mesh(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: root
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
@@ -356,167 +370,167 @@ ModelImporter:
       rotation: {x: 0.000080073405, y: -0.000029591032, z: 0.7186339, w: 0.6953886}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Head_01
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Body_Armors_01
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Body_Armors_02
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Shoes
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Helemet
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Head_02
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Pants
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Body
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Body_Armors_04
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Cloths
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Arms_Armors_02
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Arms_Armors_03
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Arms_Belts_01
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Arms_Armors_04
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Arms_Armors_01
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Arms_Spikes_02
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Body_Armors_03
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Legs_Armors_01
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Legs_Armors_02
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Legs_Armors_03
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Legs_Armors_04
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Legs_Belts_01
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Arms_Belts_02
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Legs_Belts_02
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Beard_01
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Mustache
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: -2.7021173e-15, z: 0.00000006181724, w: 0.70710677}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Beard_02
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Arms_Spikes_01
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Legs_Spikes_01
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Legs_Spikes_02
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Legs_Spikes_03
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Legs_Spikes_04
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Knight_05_Arms_Armors_05
-      parentName: Knight_04_Mesh(Clone)
+      parentName: Knight_05_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
@@ -534,17 +548,13 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 236627
-  packageName: Knights(Pack)
-  packageVersion: 1.0
-  assetPath: Assets/Knights_(Pack)/Knight_05/Mesh/Knight_05_Mesh.FBX
-  uploadId: 536097
