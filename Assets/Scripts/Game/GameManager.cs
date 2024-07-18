@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private GameObject ground;
 
 	private Camera mainCamera;
-	private UnitPlacer unitPlacer;
+	private IUnitPlacer unitPlacer;
 	private GameObject currentUnit;
 	private bool isPlacing = true;
 
@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
 		{
 			currentUnit = Instantiate(armyUnitPrefab, unitPosition, Quaternion.identity);
 			Debug.Log("Unit instantiated at position: " + unitPosition);
-			FaceMiddleLine(currentUnit);
+			FaceTowardsCamera(currentUnit);
 			lastValidPosition = unitPosition; // Update last valid position
 		}
 		else
@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
 			{
 				currentUnit = Instantiate(armyUnitPrefab, unitPosition, Quaternion.identity);
 				Debug.Log("Initial unit instantiated at position: " + unitPosition);
-				FaceMiddleLine(currentUnit);
+				FaceTowardsCamera(currentUnit);
 			}
 			else
 			{
@@ -117,12 +117,11 @@ public class GameManager : MonoBehaviour
 		return isValid;
 	}
 
-	private void FaceMiddleLine(GameObject unit)
+	private void FaceTowardsCamera(GameObject unit)
 	{
-		Vector3 middlePoint = (middleLineStart + middleLineEnd) / 2;
-		Vector3 directionToMiddleLine = middlePoint - unit.transform.position;
-		directionToMiddleLine.y = 0; // Keep the unit upright
-		unit.transform.rotation = Quaternion.LookRotation(directionToMiddleLine);
-		Debug.Log("Facing middle line with rotation: " + unit.transform.rotation.eulerAngles);
+		Vector3 directionToCamera = mainCamera.transform.forward;
+		directionToCamera.y = 0; // Keep the direction horizontal
+		unit.transform.rotation = Quaternion.LookRotation(directionToCamera);
+		Debug.Log("Facing camera with rotation: " + unit.transform.rotation.eulerAngles);
 	}
 }

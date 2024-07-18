@@ -1,9 +1,8 @@
 using UnityEngine;
 public interface IUnitPlacer
 {
-	void PlaceUnit(Vector3 position);
+	Vector3 GetPlacementPosition();
 }
-
 public interface ICharacterState
 {
 	void EnterState(CharacterState character);
