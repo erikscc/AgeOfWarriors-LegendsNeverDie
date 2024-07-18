@@ -1,13 +1,19 @@
 using UnityEngine;
 
-public class GridUnitPlacer : UnitPlacer
+public class GridUnitPlacer : IUnitPlacer
 {
-	public GridUnitPlacer(GameObject prefab, Camera camera, LayerMask layer)
-		: base(prefab, camera, layer)
+	private GameObject armyUnitPrefab;
+	private Camera mainCamera;
+	private LayerMask groundLayer;
+
+	public GridUnitPlacer(GameObject armyUnitPrefab, Camera mainCamera, LayerMask groundLayer)
 	{
+		this.armyUnitPrefab = armyUnitPrefab;
+		this.mainCamera = mainCamera;
+		this.groundLayer = groundLayer;
 	}
 
-	public override Vector3 GetPlacementPosition()
+	public Vector3 GetPlacementPosition()
 	{
 		Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 		if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, groundLayer))
