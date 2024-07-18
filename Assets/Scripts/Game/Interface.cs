@@ -3,6 +3,7 @@ public interface IUnitPlacer
 {
 	Vector3 GetPlacementPosition();
 }
+
 public interface ICharacterState
 {
 	void EnterState(CharacterState character);
