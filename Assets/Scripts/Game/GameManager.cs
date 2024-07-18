@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private GameObject ground;
 	[SerializeField] private float placementRadius = 0.5f; // Radius of the sphere collider
 
+	[Header("Emission Colors")]
+	[SerializeField] private Color validEmissionColor = Color.green;
+	[SerializeField] private Color invalidEmissionColor = Color.red;
+
 	private Camera mainCamera;
 	private IUnitPlacer unitPlacer;
 	private List<GameObject> placedUnits = new List<GameObject>(); // List to keep track of placed units
@@ -34,19 +38,15 @@ public class GameManager : MonoBehaviour
 		{
 			UpdateUnitPosition();
 
-			// Check if mouse click hits the ground and place unit accordingly
-			if (Input.GetMouseButtonDown(0))
+			// Check if the mouse button is held down and place unit accordingly
+			if (Input.GetMouseButton(0))
 			{
 				Vector3 hitPoint = unitPlacer.GetPlacementPosition();
 				if (IsPositionValid(hitPoint))
 				{
-					Debug.Log("Left mouse button clicked. Placing unit...");
+					Debug.Log("Mouse button held down. Placing unit...");
 					PlaceCurrentUnit();
 					InstantiateNextUnit();
-				}
-				else
-				{
-					Debug.Log("No valid hit point found.");
 				}
 			}
 		}
@@ -192,11 +192,11 @@ public class GameManager : MonoBehaviour
 	{
 		if (isValid)
 		{
-			SetEmissionColor(unit, Color.green);
+			SetEmissionColor(unit, validEmissionColor);
 		}
 		else
 		{
-			SetEmissionColor(unit, Color.red);
+			SetEmissionColor(unit, invalidEmissionColor);
 		}
 	}
 
