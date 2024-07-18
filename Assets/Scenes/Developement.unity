@@ -33226,6 +33226,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   ground: {fileID: 392175900}
+  placementRadius: 0.5
 --- !u!4 &1034622123
 Transform:
   m_ObjectHideFlags: 0

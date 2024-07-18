@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -78,6 +78,9 @@ public class GameManager : MonoBehaviour
 
 			// Add the placed unit to the list
 			placedUnits.Add(currentUnit);
+
+			// Change renderer colors based on validity
+			ChangeRendererColors(currentUnit, true);
 		}
 		else
 		{
@@ -86,6 +89,9 @@ public class GameManager : MonoBehaviour
 				currentUnit = Instantiate(armyUnitPrefab, unitPosition, Quaternion.identity);
 				Debug.Log("Initial unit instantiated at position: " + unitPosition);
 				FaceTowardsCamera(currentUnit);
+
+				// Change renderer colors based on validity
+				ChangeRendererColors(currentUnit, false);
 			}
 			else
 			{
@@ -107,11 +113,17 @@ public class GameManager : MonoBehaviour
 				currentUnit.transform.position = unitPosition;
 				Debug.Log("Unit position updated to valid position: " + unitPosition);
 				lastValidPosition = unitPosition; // Update last valid position
+
+				// Change renderer colors based on validity
+				ChangeRendererColors(currentUnit, true);
 			}
 			else
 			{
 				currentUnit.transform.position = lastValidPosition;
 				Debug.Log("No valid position found. Using last valid position: " + lastValidPosition);
+
+				// Change renderer colors based on validity
+				ChangeRendererColors(currentUnit, false);
 			}
 		}
 	}
@@ -124,6 +136,9 @@ public class GameManager : MonoBehaviour
 
 		// Add the current unit to the list of placed units
 		placedUnits.Add(currentUnit);
+
+		// Turn off emission color
+		SetEmissionColor(currentUnit, Color.black);
 
 		currentUnit = null;
 	}
@@ -141,5 +156,39 @@ public class GameManager : MonoBehaviour
 		directionToCamera.y = 0; // Keep the direction horizontal
 		unit.transform.rotation = Quaternion.LookRotation(directionToCamera);
 		Debug.Log("Facing camera with rotation: " + unit.transform.rotation.eulerAngles);
+	}
+
+	private void ChangeRendererColors(GameObject unit, bool isValid)
+	{
+		if (isValid)
+		{
+			SetEmissionColor(unit, Color.green);
+		}
+		else
+		{
+			SetEmissionColor(unit, Color.red);
+		}
+	}
+
+	private void SetEmissionColor(GameObject unit, Color color)
+	{
+		Renderer[] renderers = unit.GetComponentsInChildren<Renderer>();
+
+		foreach (Renderer renderer in renderers)
+		{
+			foreach (Material mat in renderer.materials)
+			{
+				mat.SetColor("_EmissionColor", color);
+
+				if (color == Color.black)
+				{
+					mat.DisableKeyword("_EMISSION");
+				}
+				else
+				{
+					mat.EnableKeyword("_EMISSION");
+				}
+			}
+		}
 	}
 }
