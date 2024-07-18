@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,6 +9,7 @@ public class GameManager : MonoBehaviour
 
 	private Camera mainCamera;
 	private IUnitPlacer unitPlacer;
+	private List<GameObject> placedUnits = new List<GameObject>(); // List to keep track of placed units
 	private GameObject currentUnit;
 	private bool isPlacing = true;
 
@@ -31,11 +33,20 @@ public class GameManager : MonoBehaviour
 		{
 			UpdateUnitPosition();
 
-			if (Input.GetMouseButtonDown(0) && IsPositionValid(currentUnit.transform.position))
+			// Check if mouse click hits the ground and place unit accordingly
+			if (Input.GetMouseButtonDown(0))
 			{
-				Debug.Log("Left mouse button clicked. Placing unit...");
-				PlaceCurrentUnit();
-				InstantiateNextUnit();
+				Vector3 hitPoint = unitPlacer.GetPlacementPosition();
+				if (IsPositionValid(hitPoint))
+				{
+					Debug.Log("Left mouse button clicked. Placing unit...");
+					PlaceCurrentUnit();
+					InstantiateNextUnit();
+				}
+				else
+				{
+					Debug.Log("No valid hit point found.");
+				}
 			}
 		}
 	}
@@ -64,6 +75,9 @@ public class GameManager : MonoBehaviour
 			Debug.Log("Unit instantiated at position: " + unitPosition);
 			FaceTowardsCamera(currentUnit);
 			lastValidPosition = unitPosition; // Update last valid position
+
+			// Add the placed unit to the list
+			placedUnits.Add(currentUnit);
 		}
 		else
 		{
@@ -107,6 +121,10 @@ public class GameManager : MonoBehaviour
 		Debug.Log("Placing current unit.");
 		// Perform any additional logic before placing the current unit
 		// For example, saving data or triggering events
+
+		// Add the current unit to the list of placed units
+		placedUnits.Add(currentUnit);
+
 		currentUnit = null;
 	}
 
