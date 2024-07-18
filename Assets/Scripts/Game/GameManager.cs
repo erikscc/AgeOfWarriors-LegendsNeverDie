@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private GameObject armyUnitPrefab;
 	[SerializeField] private LayerMask groundLayer;
 	[SerializeField] private GameObject ground;
+	[SerializeField] private float placementRadius = 0.5f; // Radius of the sphere collider
 
 	private Camera mainCamera;
 	private IUnitPlacer unitPlacer;
@@ -79,6 +80,9 @@ public class GameManager : MonoBehaviour
 			// Add the placed unit to the list
 			placedUnits.Add(currentUnit);
 
+			// Disable colliders during placement
+			SetCollidersActive(currentUnit, false);
+
 			// Change renderer colors based on validity
 			ChangeRendererColors(currentUnit, true);
 		}
@@ -89,6 +93,9 @@ public class GameManager : MonoBehaviour
 				currentUnit = Instantiate(armyUnitPrefab, unitPosition, Quaternion.identity);
 				Debug.Log("Initial unit instantiated at position: " + unitPosition);
 				FaceTowardsCamera(currentUnit);
+
+				// Disable colliders during placement
+				SetCollidersActive(currentUnit, false);
 
 				// Change renderer colors based on validity
 				ChangeRendererColors(currentUnit, false);
@@ -137,6 +144,9 @@ public class GameManager : MonoBehaviour
 		// Add the current unit to the list of placed units
 		placedUnits.Add(currentUnit);
 
+		// Enable colliders after placement
+		SetCollidersActive(currentUnit, true);
+
 		// Turn off emission color
 		SetEmissionColor(currentUnit, Color.black);
 
@@ -145,9 +155,29 @@ public class GameManager : MonoBehaviour
 
 	private bool IsPositionValid(Vector3 position)
 	{
-		bool isValid = position.x < groundBounds.center.x;
-		Debug.Log("Position validity check for position " + position + ": " + isValid);
-		return isValid;
+		// Check if the position is within the valid bounds
+		if (position.x >= groundBounds.center.x)
+		{
+			Debug.Log("Position is invalid: Out of bounds.");
+			return false;
+		}
+
+		// Offset position for OverlapSphere
+		Vector3 offsetPosition = position + Vector3.up * 0.5f;
+
+		// Use OverlapSphere to check for collisions
+		Collider[] hitColliders = Physics.OverlapSphere(offsetPosition, placementRadius);
+		foreach (Collider collider in hitColliders)
+		{
+			if (collider.gameObject != currentUnit && !groundLayer.Contains(collider.gameObject.layer))
+			{
+				Debug.Log("Position is invalid: Colliding with object.");
+				return false;
+			}
+		}
+
+		Debug.Log("Position is valid: No collisions detected.");
+		return true;
 	}
 
 	private void FaceTowardsCamera(GameObject unit)
@@ -190,5 +220,32 @@ public class GameManager : MonoBehaviour
 				}
 			}
 		}
+	}
+
+	private void SetCollidersActive(GameObject unit, bool active)
+	{
+		Collider[] colliders = unit.GetComponentsInChildren<Collider>();
+		foreach (Collider collider in colliders)
+		{
+			collider.enabled = active;
+		}
+	}
+
+	private void OnDrawGizmos()
+	{
+		if (isPlacing && currentUnit != null)
+		{
+			Gizmos.color = Color.yellow;
+			Vector3 offsetPosition = currentUnit.transform.position + Vector3.up * 0.5f;
+			Gizmos.DrawWireSphere(offsetPosition, placementRadius);
+		}
+	}
+}
+
+public static class LayerMaskExtensions
+{
+	public static bool Contains(this LayerMask mask, int layer)
+	{
+		return mask == (mask | (1 << layer));
 	}
 }
